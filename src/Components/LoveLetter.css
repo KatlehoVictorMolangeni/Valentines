@@ -1,0 +1,176 @@
+/* Center everything */
+.love-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffebf0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Envelope wrapper */
+.envelope-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 140px;
+}
+
+/* Envelope styles */
+.envelope {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    background-color: #d6336c;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Envelope flap */
+.flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #e63969;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform-origin: top;
+}
+
+/* Envelope body */
+.body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #d6336c;
+    border-radius: 10px;
+}
+
+/* Love card styles */
+.love-card {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Increased width for better text spacing */
+    min-height: 350px; /* Increased height to accommodate text */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Ensure text flows properly */
+    font-size: 1rem;
+    color: #d6336c;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    white-space: normal;
+}
+
+/* Button styling */
+.open-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff477e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.open-btn:hover {
+    background-color: #e63969;
+}
+/* Floating heart animation */
+@keyframes float-heart {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(-100px) scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+    }
+}
+
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #d6336c;
+    animation: float-heart 6s ease-in-out infinite;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+/* Floating Mamohlolo Name Animation */
+@keyframes float-name {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-100px) scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+}
+
+/* Style for the floating names */
+.floating-name {
+    position: absolute;
+    font-size: 3rem;
+    color: #d6336c;
+    font-weight: bold;
+    animation: float-name 6s ease-in-out infinite;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Randomized floating names position */
+.floating-name:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.floating-name:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+}
+
+.floating-name:nth-child(3) {
+    left: 45%;
+    animation-delay: 4s;
+}
+
+.floating-name:nth-child(4) {
+    left: 65%;
+    animation-delay: 6s;
+}
+
+.floating-name:nth-child(5) {
+    left: 85%;
+    animation-delay: 8s;
+}
