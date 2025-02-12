@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import "./LoveLetter.css";
-import Gallery from "./Gallery";
+
 
 const LoveLetter = () => {
   const [isOpen, setIsOpen] = useState(false);

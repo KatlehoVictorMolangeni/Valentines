@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaHeart } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
-import Gallery from "./Gallery";
+
 
 const LandingPage = () => {
   const navigate = useNavigate();
